@@ -11,10 +11,9 @@ export default {
   props: {
     msg: String
   },
-  setup (props, context) {
+  setup (props, context) {  // beforeCreate 之后、created 之前执行
     const state = reactive({
-      msger: props.msg,
-
+      msger: props.msg
     });
     state.msger += ' / child component';
     console.log(props.msg);

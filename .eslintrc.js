@@ -1,11 +1,10 @@
 module.exports = {
   root: true,
-  parserOptions: {
-    sourceType: 'module'
+  env: {
+    node: true
   },
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  'extends': [
+    'plugin:vue/essential',
   ],
   // add your custom rules here
   rules: {

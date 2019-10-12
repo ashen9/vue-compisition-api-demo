@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <ReactiveChild msg="reactive component"/>
+     <article>
+       <hr/>first reactive component<hr/>
+     </article>
+      <ReactiveChild msg="reactive component"/>
+     <article>
+       <hr/> second ref component<hr/>
+     </article>
     <RefChild msg="ref component"/>
   </div>
 </template>
