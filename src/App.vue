@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ReactiveChild msg="reactive component"/>
+    <RefChild msg="ref component"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ReactiveChild from './components/ReactiveChild.vue'
+import RefChild from "./components/RefChild";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    RefChild,
+    ReactiveChild
   }
 }
 </script>
