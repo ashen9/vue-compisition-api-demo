@@ -3,23 +3,31 @@
      <article>
        <hr/>first reactive component<hr/>
      </article>
-      <ReactiveChild msg="reactive component"/>
+     <ReactiveChild msg="reactive component"/>
+
      <article>
        <hr/> second ref component<hr/>
      </article>
-    <RefChild msg="ref component"/>
+     <RefChild msg="ref component"/>
+
+      <article>
+          <hr/> third computed&&watch component<hr/>
+      </article>
+      <ThirdChild msg="third computed&&watch component"/>
   </div>
 </template>
 
 <script>
 import ReactiveChild from './components/ReactiveChild.vue'
 import RefChild from "./components/RefChild";
+import ThirdChild from "./components/ThirdChild";
 
 export default {
   name: 'app',
   components: {
     RefChild,
-    ReactiveChild
+    ReactiveChild,
+	ThirdChild
   }
 }
 </script>
