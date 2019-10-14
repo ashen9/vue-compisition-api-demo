@@ -11,23 +11,30 @@
      <RefChild msg="ref component"/>
 
       <article>
-          <hr/> third computed&&watch component<hr/>
+          <hr/> third computed component<hr/>
       </article>
-      <ThirdChild msg="third computed&&watch component"/>
+      <ThirdComputeChild msg="third computed component"/>
+
+      <article>
+          <hr/> fourth watch component<hr/>
+      </article>
+      <FourthWatchChild msg="fourth watch component"/>
   </div>
 </template>
 
 <script>
 import ReactiveChild from './components/ReactiveChild.vue'
 import RefChild from "./components/RefChild";
-import ThirdChild from "./components/ThirdChild";
+import ThirdComputeChild from "./components/ThirdComputeChild";
+import FourthWatchChild from "./components/FourthWatchChild";
 
 export default {
   name: 'app',
   components: {
     RefChild,
     ReactiveChild,
-	ThirdChild
+	ThirdComputeChild,
+	FourthWatchChild
   }
 }
 </script>
